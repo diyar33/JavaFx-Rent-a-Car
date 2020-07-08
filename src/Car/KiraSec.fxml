@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="kiraSecPage" prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.kirasec">
+   <children>
+      <DatePicker fx:id="alimTarih" layoutX="119.0" layoutY="26.0" promptText="Tarih Seç" />
+      <DatePicker fx:id="teslimTarih" layoutX="119.0" layoutY="112.0" promptText="Tarih Seç" />
+      <Label layoutX="26.0" layoutY="30.0" text="Alım Tarihi" />
+      <Label layoutX="26.0" layoutY="75.0" prefHeight="17.0" prefWidth="96.0" text="Kiralanacak Şube" />
+      <ComboBox fx:id="kiraSube" layoutX="143.0" layoutY="71.0" prefWidth="150.0" promptText="Şube Seç" />
+      <ComboBox fx:id="teslimSube" layoutX="143.0" layoutY="150.0" prefWidth="150.0" promptText="Şube Seç" />
+      <Label layoutX="27.0" layoutY="116.0" text="TeslimTarihi" />
+      <Label layoutX="27.0" layoutY="154.0" text="Teslim Şubesi" />
+      <Label layoutX="27.0" layoutY="215.0" text="Araç Model" />
+      <Label layoutX="27.0" layoutY="192.0" text="Araç Marka" />
+      <Label layoutX="28.0" layoutY="239.0" text="Yakıt" />
+      <Button layoutX="197.0" layoutY="201.0" mnemonicParsing="false" onAction="#onKirala" prefHeight="46.0" prefWidth="96.0" text="Kirala" />
+      <Label fx:id="marka" layoutX="96.0" layoutY="192.0" text="label" />
+      <Label fx:id="model" layoutX="96.0" layoutY="216.0" text="label" />
+      <Label fx:id="yakit" layoutX="96.0" layoutY="239.0" text="label" />
+   </children>
+</AnchorPane>

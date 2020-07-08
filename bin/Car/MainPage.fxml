@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPage" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.mainPage">
+   <children>
+      <VBox prefHeight="653.0" prefWidth="204.0" style="-fx-background-color: #36394E;">
+         <children>
+            <ImageView fitHeight="79.0" fitWidth="211.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../car-png-download-.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="56.0" prefWidth="217.0" text=" OTO Kiralama" textAlignment="RIGHT" textFill="#a0a2ab">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <Line endX="-23.37377166748047" endY="-0.41421353816986084" startX="-100.0" stroke="#a0a2ab" />
+            <Label prefHeight="56.0" prefWidth="253.0" text="  Ana Sayfa" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#gett" prefHeight="52.0" prefWidth="220.0" style="-fx-background-color: #36394E;" text="Araç Kirala" textFill="#6b6f7e">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="cikisyap" mnemonicParsing="false" onAction="#getGecmis" prefHeight="52.0" prefWidth="220.0" style="-fx-background-color: #36394E;" text="Geçmiş İşlemler" textFill="#6b6f7e">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#getIletisim" prefHeight="52.0" prefWidth="220.0" style="-fx-background-color: #36394E;" text="İletişim" textFill="#6b6f7e">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Pane layoutX="210.0" layoutY="-1.0" prefHeight="73.0" prefWidth="690.0" style="-fx-background-color: #36394E;">
+         <children>
+            <Label fx:id="userLabel" layoutX="556.0" layoutY="23.0" prefHeight="31.0" prefWidth="59.0" text="Label" textFill="#a0a2ab">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="42.0" fitWidth="41.0" layoutX="627.0" layoutY="17.0" onMouseClicked="#cikisYap" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../cikisYap.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="233.0" layoutY="18.0" text="Şuanki Aracınız" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fx:id="otoimg" fitHeight="243.0" fitWidth="603.0" layoutX="261.0" layoutY="97.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../hosgeldiniz.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="264.0" layoutY="357.0" text="Marka:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="264.0" layoutY="421.0" text="Segment:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="266.0" layoutY="458.0" text="Motor Hacmi:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="266.0" layoutY="497.0" text="Yılı:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="263.0" layoutY="391.0" text="Model:" />
+      <Label layoutX="574.0" layoutY="359.0" text="Kiralama Tarihi:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="575.0" layoutY="390.0" text="Kiralanan Şube:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="574.0" layoutY="422.0" text="Teslim Tarihi:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="576.0" layoutY="458.0" text="Teslim Şubesi:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="marka" layoutX="313.0" layoutY="360.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="model" layoutX="314.0" layoutY="390.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="segment" layoutX="333.0" layoutY="421.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="motor" layoutX="371.0" layoutY="457.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="yil" layoutX="309.0" layoutY="495.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ktarih" layoutX="689.0" layoutY="358.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="tsube" layoutX="689.0" layoutY="456.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ttarih" layoutX="687.0" layoutY="421.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ksube" layoutX="691.0" layoutY="389.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="265.0" layoutY="530.0" text="Yakıt:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="yakit" layoutX="314.0" layoutY="530.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="577.0" layoutY="494.0" text="Günlük Fiyat:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="579.0" layoutY="528.0" text="Toplam Fiyat:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="tfiyat" layoutX="689.0" layoutY="527.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="gfiyat" layoutX="689.0" layoutY="493.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="55.0" fitWidth="44.0" layoutX="841.0" layoutY="594.0" onMouseClicked="#kapat" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../kapat.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
